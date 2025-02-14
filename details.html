@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-ticaret Websitesi</title>
+    <!------------ BOXICONS CDN LİNK ------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+        integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!------------ SWIPER CSS ------------>
+    <link rel="stylesheet" href="assests/css/swiper-bundle.css">
+
+    <!---------------- CSS ---------------->
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" class="js-color-style" href="assests/css/colors/color-1.css">
+</head>
+
+<body>
+    <!--================= HEADER =================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="bx bxs-shopping-bags nav__logo-icon"></i> e-SHOPPİNG
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Anasayfa</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Mağaza</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">Hakkımızda</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="faq.html" class="nav__link ">FaQ's</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">İletişim</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-togle">
+                    <i class="bx bx-user"></i>
+                </div>
+
+                <div class="nav__shop" id="cart_shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-togle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--================= CART =================-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+
+        <h2 class="cart__title-center">Sepetim</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assests/img/cart-1.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Kaban</h3>
+                    <span class="cart__price">5000₺</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assests/img/cart-2.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Hırka</h3>
+                    <span class="cart__price">1000₺</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assests/img/cart-3.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Yağmurluk</h3>
+                    <span class="cart__price">2500₺</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 ITEM</span>
+            <span class="cart__prices-total">8500₺</span>
+        </div>
+    </div>
+
+
+    <!--================= LOGIN =================-->
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+
+        <h2 class="login__title-center">Login</h2>
+
+        <form action="" class="login__form grid">
+            <div class="login__content">
+                <label for="" class="login__label">Email</label>
+                <input type="email" class="login__input">
+            </div>
+
+            <div class="login__content">
+                <label for="" class="login__label">Password</label>
+                <input type="password" class="login__input">
+            </div>
+
+            <div>
+                <a href="#" class="button">Sing In</a>
+            </div>
+
+            <div>
+                <p class="signup">Not a member? <a href="registration.html">Sing up now</a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <!--================= MAIN =================-->
+    <main class="main">
+        <!--================= DETAILS =================-->
+        <section class="details section container">
+            <h2 class="breadcrumb__title">Detay Sayfası</h2>
+            <h3 class="breadcrumb__subtitle">Anasayfa > <span>Detaylar</span></h3>
+
+            <div class="details__container grid">
+                <div class="product__images grid">
+                    <div class="product__img">
+                        <div class="details__img-tag">Yeni</div>
+                        <img src="assests/img/details-1.png" alt="">
+                    </div>
+                    <div class="product__img">
+                        <img src="assests/img/details-2.png" alt="">
+                    </div>
+                    <div class="product__img">
+                        <img src="assests/img/details-3.png" alt="">
+                    </div>
+                    <div class="product__img">
+                        <img src="assests/img/details-4.png" alt="">
+                    </div>
+                </div>
+
+                <div class="product__info">
+                    <p class="details__subtitle">Kadın > Ceketler</p>
+                    <h3 class="details__title">Yağmurluk Ceket</h3>
+
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bx-star"></i>
+                        </div>
+                        <span class="reviews__count">40 + Yorum</span>
+                    </div>
+
+                    <div class="details__prices">
+                        <span class="details__price">799,99₺</span>
+                        <span class="details__discount">1299,99₺</span>
+                        <span class="discount__percentage">%40 İndirim</span>
+                    </div>
+
+                    <div class="details__description">
+                        <h3 class="description__title">Ürün Detayları</h3>
+                        <div class="description__details">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos officia
+                                placeat expedita.</p>
+                        </div>
+                    </div>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-heart cart__amount-heart"></i>
+                    </div>
+
+                    <a href="#" class="button">Sepete Ekle</a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--================= RELATED PRODUCTS =================-->
+        <section class="related__products section">
+            <h2 class="section__title">Benzer Ürünlerimiz</h2>
+
+            <div class="new__container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- NEW CONTENT 1 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Yeni</div>
+                            <img src="assests/img/new-1.png" alt="" class="new__img">
+                            <h3 class="new__title">Yağmurluk Ceket</h3>
+                            <span class="new__subtitle">Dış Giyim</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">799,99₺</span>
+                                <span class="new__discount">1299,99₺</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+
+                        <!-- NEW CONTENT 2 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Yeni</div>
+                            <img src="assests/img/new-2.png" alt="" class="new__img">
+                            <h3 class="new__title">Spor Ceket</h3>
+                            <span class="new__subtitle">Dış Giyim</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">1199,99₺</span>
+                                <span class="new__discount">1599,99₺</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+
+                        <!-- NEW CONTENT 3 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Yeni</div>
+                            <img src="assests/img/new-3.png" alt="" class="new__img">
+                            <h3 class="new__title">Şişme Mont</h3>
+                            <span class="new__subtitle">Dış Giyim</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">1199,99₺</span>
+                                <span class="new__discount">1599,99₺</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+
+                        <!-- NEW CONTENT 4 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Yeni</div>
+                            <img src="assests/img/new-4.png" alt="" class="new__img">
+                            <h3 class="new__title">Kolej Ceket</h3>
+                            <span class="new__subtitle">Dış Giyim</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">599,99₺</span>
+                                <span class="new__discount">1099,99₺</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+
+                        <!-- NEW CONTENT 5 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Yeni</div>
+                            <img src="assests/img/new-5.png" alt="" class="new__img">
+                            <h3 class="new__title">Bluz</h3>
+                            <span class="new__subtitle">Dış Giyim</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">359,99₺</span>
+                                <span class="new__discount">759,99₺</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+
+                        <!-- NEW CONTENT 6 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Yeni</div>
+                            <img src="assests/img/new-6.png" alt="" class="new__img">
+                            <h3 class="new__title">Eşofman Üst</h3>
+                            <span class="new__subtitle">Dış Giyim</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">799,99₺</span>
+                                <span class="new__discount">1099,99₺</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--================= FOOTER =================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <!-- FOOTER CONTENT 1 -->
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="bx bxs-shopping-bags footer__logo-icon"></i> e-shopper
+                </a>
+
+                <p class="footer__description">Enjoy the biggest sale <br> of your life.</p>
+
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <i class="bx bxl-instagram-alt"></i>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- FOOTER CONTENT 2 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Hakkımızda</h3>
+
+                <ul class="footer__links">
+                    <li><a href="about.html" class="footer__link">Biz Kimiz?
+                        </a></li>
+                    <li><a href="#" class="footer__link">Müşteri Hizmetleri</a></li>
+                    <li><a href="#" class="footer__link">Destek Merkezi</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER CONTENT 3 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Hizmetlerimiz</h3>
+
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Mağaza</a></li>
+                    <li><a href="#" class="footer__link">İndirimler</a></li>
+                    <li><a href="#" class="footer__link">Teslimat</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER CONTENT 4 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Şirket</h3>
+
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Kayıt Ol</a></li>
+                    <li><a href="contact.html" class="footer__link">İletşim</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; AliUğur.NET . All rights reserved</span>
+    </footer>
+
+    <!--================= LIGHTBOX GALLERY =================-->
+    <div class="lightbox">
+        <div class="lightbox__content">
+            <div class="lightbox__close">&times;</div>
+            <img src="assests/img/details-2.png" alt="" class="lightbox__img">
+            <div class="lightbox__caption">
+                <div class="caption__text">e-shopper</div>
+                <div class="caption__counter"></div>
+            </div>
+        </div>
+
+        <div class="lightbox__controls">
+            <div class="prev__item" onclick="prevItem()"><i class="bx bx-chevron-left"></i></div>
+            <div class="next__item" onclick="nextItem()"><i class="bx bx-chevron-right"></i></div>
+
+        </div>
+
+
+    </div>
+
+
+    <!--================= SCROLL UP =================-->
+    <a href="#" class="scrollup" id="scrollup">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!--================= STYLE SWITCHER =================-->
+    <div class="style__switcher">
+        <div class="style__switcher-togler s__icon">
+            <i class="bx bxs-cog bx-spin"></i>
+        </div>
+
+        <h4>Tema Rengi Değiştir</h4>
+
+        <div class="theme__colors js-theme-colors">
+            <button type="button" data-js-theme-color="color-1" class="js-theme-color-item theme__button color-1">
+                <i class="bx bx-check"></i>
+            </button>
+
+            <button type="button" data-js-theme-color="color-2" class="js-theme-color-item theme__button color-2">
+                <i class="bx bx-check"></i>
+            </button>
+
+            <button type="button" data-js-theme-color="color-3" class="js-theme-color-item theme__button color-3">
+                <i class="bx bx-check"></i>
+            </button>
+
+            <button type="button" data-js-theme-color="color-4" class="js-theme-color-item theme__button color-4">
+                <i class="bx bx-check"></i>
+            </button>
+
+            <button type="button" data-js-theme-color="color-5" class="js-theme-color-item theme__button color-5">
+                <i class="bx bx-check"></i>
+            </button>
+        </div>
+    </div>
+
+
+    <!--================= LIGHTBOX JS =================-->
+    <script>
+        const productItems = document.querySelectorAll(".product__img");
+        const totalProductItems = productItems.length;
+        const lightbox = document.querySelector(".lightbox");
+        const lightboxImg = lightbox.querySelector(".lightbox__img");
+        const lightboxClose = lightbox.querySelector(".lightbox__close");
+        const lightboxCounter = lightbox.querySelector(".caption__counter");
+
+        let itemIndex = 0;
+
+        for (let i = 0; i < totalProductItems; i++) {
+            // console.log(productItems[i]) 
+            productItems[i].addEventListener("click", function () {
+                itemIndex = i;
+                changeItem();
+                toggleLightbox();
+            })
+        }
+
+        function nextItem() {
+            if (itemIndex === totalProductItems - 1) {
+                itemIndex = 0;
+            }
+            else {
+                itemIndex++;
+            }
+            changeItem();
+        };
+
+        function prevItem() {
+            if (itemIndex === 0) {
+                itemIndex = totalProductItems - 1;
+            }
+            else {
+                itemIndex--;
+            }
+            changeItem();
+        };
+
+        function toggleLightbox() {
+            lightbox.classList.toggle("open");
+        };
+
+        function changeItem() {
+            imgSrc = productItems[itemIndex].querySelector(".product__img img").getAttribute("src")
+            lightboxImg.src = imgSrc;
+            lightboxCounter.innerHTML = (itemIndex + 1) + " of " + totalProductItems;
+        };
+
+        // Close Lightbox
+
+        lightbox.addEventListener("click", () => {
+            if (event.target === lightboxClose || event.target === lightbox) {
+                toggleLightbox();
+            }
+        });
+
+    </script>
+
+
+    <!--================= SWIPER JS =================-->
+    <script src="assests/js/swiper-bundle.min.js"></script>
+    <!--================= JS =================-->
+    <script src="assests/js/main.js"></script>
+
+</body>
+
+</html>
