@@ -69,6 +69,83 @@ if (cartClose) {
   });
 }
 
+
+// Cart Ürün Sayı Arttırma ve Azaltma
+const minus1 = document.getElementById("minus-1");
+const plus1 = document.getElementById("plus-1");
+const cart_item = document.getElementById("cart-item-1");
+const trash1 = document.getElementById("trash1")
+let sayi1 = 1 
+
+minus1.addEventListener("click", function(){
+  sayi1 -= 1
+  cart_item.innerHTML = sayi1
+  if(sayi1 == 0){
+    document.getElementById("item-1").innerHTML = ""
+  }
+});
+
+plus1.addEventListener("click", function(){
+  sayi1 += 1
+  cart_item.innerHTML = sayi1
+});
+
+trash1.addEventListener("click",()=>{
+  document.getElementById("item-1").innerHTML = ""
+})
+
+
+
+
+
+const minus2 = document.getElementById("minus-2");
+const plus2 = document.getElementById("plus-2");
+const cart_item2 = document.getElementById("cart-item-2");
+const trash2 = document.getElementById("trash2")
+let sayi2 = 1 
+
+minus2.addEventListener("click", function(){
+  sayi2 -= 1
+  cart_item2.innerHTML = sayi2
+  if(sayi2 == 0){
+    document.getElementById("item-2").innerHTML = ""
+  }
+});
+
+plus2.addEventListener("click", function(){
+  sayi2 += 1
+  cart_item2.innerHTML = sayi2
+});
+trash2.addEventListener("click",()=>{
+  document.getElementById("item-2").innerHTML = ""
+})
+
+
+const minus3 = document.getElementById("minus-3");
+const plus3 = document.getElementById("plus-3");
+const cart_item3 = document.getElementById("cart-item-3");
+const trash3 = document.getElementById("trash3")
+let sayi3 = 1 
+
+minus3.addEventListener("click", function(){
+  sayi3 -= 1
+  cart_item3.innerHTML = sayi3
+  if(sayi3 == 0){
+    document.getElementById("item-3").innerHTML = ""
+  }
+});
+
+plus3.addEventListener("click", function(){
+  sayi3 += 1
+  cart_item3.innerHTML = sayi3
+});
+
+trash3.addEventListener("click",()=>{
+  document.getElementById("item-3").innerHTML = ""
+})
+
+
+
 // ========= SHOW LOGIN =========
 
 const login = document.getElementById("login"),
